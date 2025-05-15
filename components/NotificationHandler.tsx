@@ -40,6 +40,8 @@ export default function NotificationHandler() {
                 body: payload.notification?.body,
                 icon: '/favicon.ico',
             });
+
+            console.log("notification",notification)
         });
 
         return () => unsubscribe();
